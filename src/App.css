@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #0d6efd;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #50a9cc;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #317f85;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px ;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+div.blog-card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+div.blog-card:hover {
+  background-color: #f0f0f0;  
+  transform: translateY(-5px); 
+}
+
+div.blog-card h2 {
+  color: #333;
+}
+
+div.blog-card:hover h2 {
+  color: #007bff; 
+}
+
+div.blog-card p {
+  color: #666;
+}
+
+.hover-test {
+  width: 600px;
+  height: 100px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.hover-test:hover {
+  background-color: #56aad0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #50a9cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #317f85;
 }
